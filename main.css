@@ -88,4 +88,39 @@ header nav .search span {
   top: 35%;
   color: white;
 }
+
+.burgermenue {
+  display: none;
+}
+.burgermenue ul {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 50%;
+}
+.burgermenue ul li {
+  width: 100px;
+}
+.burgermenue ul li a {
+  display: block;
+  background-color: #eee;
+  color: black;
+  width: 100% !important;
+}
+.burgermenue ul li a:hover {
+  background-color: #5f5f5f;
+}
+@media (max-width: 768px) {
+  .desktop-links,
+  .search.search {
+    display: none;
+  }
+  .burgermenue i.fa-burger {
+    display: block;
+  }
+  .burgermenue {
+    display: block;
+    position: relative;
+  }
+}
 /* End Header */
