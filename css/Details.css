@@ -52,3 +52,19 @@
 .details-galerie img{
     width: 30%;
 }
+
+@media only screen and (max-width: 870px){
+    .details-main-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details-main-section img{
+        width: 90%;
+    }
+
+    .details-section-data h3{
+        margin-left: 5%;
+        font-family:'Courier New', Courier, monospace;
+    }
+}
