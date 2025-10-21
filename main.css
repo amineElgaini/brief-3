@@ -48,6 +48,7 @@ a {
 /* Start Header */
 header {
   background-color: black;
+  height: 60px;
 }
 header nav {
   color: white;

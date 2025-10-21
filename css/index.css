@@ -1,0 +1,23 @@
+.hero {
+  background-image: url("../assets/heroImage.png");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 60px);
+  color: white;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  height: 70%;
+}
+.hero .container h1 {
+  font-size: 40px;
+}
+.hero .container p {
+  max-width: 400px;
+  font-size: 25px;
+  color: #eee;
+}
