@@ -67,4 +67,15 @@
         margin-left: 5%;
         font-family:'Courier New', Courier, monospace;
     }
+
+    .details-galerie{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .details-galerie img{
+        width: 50%;
+        margin-top: 3%;
+    }
 }
