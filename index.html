@@ -15,7 +15,6 @@
     <title>Home</title>
   </head>
   <body>
-
     <header>
       <nav class="container">
         <span class="logo">Logo</span>
@@ -27,11 +26,11 @@
         </ul>
         <div class="search">
           <input type="text" placeholder="search..." />
-          <span><i  class="fa-solid fa-magnifying-glass"></i></span>
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
         </div>
         <span class="burgermenue">
           <i id="menu-icon" class="fa-solid fa-burger fa-2x"></i>
-          <ul id="menu-list" >
+          <ul id="menu-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="blog.html">Blog</a></li>
@@ -47,6 +46,64 @@
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
           harum officiis vitae
         </p>
+      </div>
+    </section>
+    <style>
+      .mission-services .content img {
+        max-width: 300px;
+        /* height: 100%; */
+      }
+      .mission-services .content div:first-child {
+        max-width: 300px;
+      }
+      .mission-services {
+        padding: 50px 0;
+      }
+      .mission-services h2 {
+        /* margin: auto; */
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 70px;
+      }
+      .mission-services .content div:first-of-type {
+        max-width: 500px;
+      }
+      .mission-services .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        /* flex-wrap: wrap; */
+      }
+      .mission-services .content h3 {
+        font-size: 30px;
+      }
+      .mission-services .content p {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+    </style>
+    <section class="mission-services container">
+      <h2>Mission and services</h2>
+      <div class="content">
+        <img src="./assets/mission.png" alt="" />
+        <div>
+          <h3>Live Music Performances</h3>
+          <p>
+            Enjoy unforgettable live shows from top artists and local talents
+            across multiple stages, all weekend long.
+          </p>
+          <h3>Food & Drinks</h3>
+          <p>
+            Taste delicious street food, refreshing drinks, and gourmet treats
+            from our curated selection of local vendors.
+          </p>
+          <h3>Art & Activities</h3>
+          <p>
+            Explore creative workshops, art installations, and fun activities
+            designed to make your festival experience unique.
+          </p>
+        </div>
       </div>
     </section>
     <script src="./assets/main.js"></script>
