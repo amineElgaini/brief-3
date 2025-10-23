@@ -1,0 +1,52 @@
+.hero {
+  background-image: url("../assets/heroImage.png");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 60px);
+  color: white;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  height: 70%;
+}
+.hero .container h1 {
+  font-size: 40px;
+}
+.hero .container p {
+  max-width: 400px;
+  font-size: 25px;
+  color: #eee;
+}
+.mission-services .content img {
+  max-width: 300px;
+}
+.mission-services .content div:first-child {
+  max-width: 300px;
+}
+.mission-services {
+  padding: 50px 0;
+}
+.mission-services h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.mission-services .content div:first-of-type {
+  max-width: 500px;
+}
+.mission-services .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.mission-services .content h3 {
+  font-size: 30px;
+}
+.mission-services .content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,128 @@
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "DM Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: white;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Start Header */
+header {
+  background-color: black;
+  height: 60px;
+}
+header nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+header nav .search {
+  display: flex;
+  position: relative;
+}
+header nav .search input {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 25px;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.634);
+  outline: none;
+}
+header nav .search span {
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  color: white;
+}
+
+.burgermenue {
+  display: none;
+}
+.burgermenue ul {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 50%;
+}
+.burgermenue ul li {
+  width: 100px;
+}
+.burgermenue ul li a {
+  display: block;
+  background-color: #eee;
+  color: black;
+  width: 100% !important;
+}
+.burgermenue ul li a:hover {
+  background-color: #5f5f5f;
+}
+@media (max-width: 768px) {
+  .desktop-links,
+  .search.search {
+    display: none;
+  }
+  .burgermenue i.fa-burger {
+    display: block;
+  }
+  .burgermenue {
+    display: block;
+    position: relative;
+  }
+}
+/* End Header */
