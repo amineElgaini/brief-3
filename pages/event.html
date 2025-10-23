@@ -7,17 +7,37 @@
     <title>Document</title>
     <link href="/main.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/event.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
 
+        const date = new Date();
+
+        const year= date.getFullYear();
+        const month = date.getMonth();
+        const day = date.getDate();
+
+        console.log(year);
+        console.log(month);
+        console.log(day);
+        
+        
+    </script>
+</head>
 <body>
     <header>
       <nav class="container">
         <span class="logo">Logo</span>
         <ul class="desktop-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="./pages/event.html">Events</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="../pages/">Blog</a></li>
+          <li><a href="../pages/">FAQ</a></li>
         </ul>
         <div class="search">
           <input type="text" placeholder="search..." />
@@ -26,50 +46,61 @@
         <span class="burgermenue">
           <i id="menu-icon" class="fa-solid fa-burger fa-2x"></i>
           <ul id="menu-list" >
-            <li><a href="index.html">Home</a></li>
-            <li><a href="./pages/event.html">Events</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="../index.html">Home</a></li>
+          <li><a href="./pages/event.html">Events</a></li>
+          <li><a href="../pages/">Blog</a></li>
+          <li><a href="../pages/">FAQ</a></li>
           </ul>
         </span>
       </nav>
     </header>
+    <div>
+        <h1 class="event__title">Events</h1>
+    </div>
     <section class="event_card-carousel">
         <div class="carousel-event">
+            <a href="./Details.html">
             <div class="event_card--item1">
                 <img src="../assets/Evenement-2.jpg" alt="Evenement-1" class="img-carousel">
                 <p>Wonder Girls 2010 Wonder</p>
                 <p>Megarama Casablanca</p>
                 <p>02-09-2025</p>
             </div>
+            </a>
 
+            <a href="./Details.html">
             <div class="event_card--item1">
                 <img src="../assets/Evenement-5.jpg" alt="Evenement-2" class="img-carousel">
                 <p>Jazz Night</p>
                 <p>Théâtre Mohammed V</p>
                 <p>12-10-2025</p>
             </div>
+            </a>
 
+            <a href="./Details.html">
             <div class="event_card--item1">
                 <img src="../assets/Evenement-3.jpg" alt="Evenement-3" class="img-carousel">
                 <p>Festival Gnawa</p>
                 <p>Essaouira</p>
                 <p>05-07-2025</p>
             </div>
+            </a>
 
+            <a href="./Details.html">
             <div class="event_card--item1">
                 <img src="../assets/Evenement-4.jpg" alt="Evenement-1" class="img-carousel">
                 <p>Wonder Girls 2010 Wonder</p>
                 <p>Megarma Casablanca</p>
-                <p>02-09-2025</p>
+                <p>24-10-2025</p>
             </div>
+            </a>
         </div>
     </section>
     <section class="event-class">
         <div class="event_time">
-            <p onclick="semaine()">Cette semaine</p>
-            <p onclick="weekend()">Cette weekend</p>
-            <p onclick="mois()">Ce mois-ci</p>
+            <p>Cette semaine</p>
+            <p>Cette weekend</p>
+            <p>Ce mois-ci</p>
         </div>
 
         <div class="event_card">
@@ -78,7 +109,7 @@
                 <img src="../assets/Evenement-1.jpg" alt="Evenement-1">
                 <p>Wonder Girls 2010 Wonder</p>
                 <p>Megarma Casablanca</p>
-                <p>02-09-2025</p>
+                <p>27-10-2025</p>
             </div>
             </a>
             <a href="./Details.html" class="event_card--lien" id="event-item2">
@@ -86,7 +117,7 @@
                 <img src="../assets/Evenement-1.jpg" alt="Evenement-1">
                 <p>Wonder Girls 2010 Wonder</p>
                 <p>Megarma Casablanca</p>
-                <p>02-09-2025</p>
+                <p>28-11-2025</p>
             </div>
             </a>
             <a href="./Details.html" class="event_card--lien" id="event-item3">
@@ -110,7 +141,7 @@
                     <img src="../assets/Evenement-3.jpg" alt="Evenement-1">
                     <p>Wonder Girls 2010 Wonder </p>
                     <p>Megarma Casablanca</p>
-                    <p>02-09-2025</p>
+                    <p>30-10-2025</p>
                 </div>
             </a>
             <a href="./Details.html" class="event_card--lien" id="event-item6">
@@ -118,7 +149,7 @@
                     <img src="../assets/Evenement-3.jpg" alt="Evenement-1">
                     <p>Wonder Girls 2010 Wonder </p>
                     <p>Megarma Casablanca</p>
-                    <p>02-09-2025</p>
+                    <p>02-12-2025</p>
                 </div>
             </a>
 
