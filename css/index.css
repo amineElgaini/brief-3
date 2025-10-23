@@ -50,3 +50,9 @@
   font-size: 18px;
   margin-bottom: 30px;
 }
+@media (max-width: 768px) {
+  .mission-services .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
