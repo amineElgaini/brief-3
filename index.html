@@ -1,80 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Home</title>
-  </head>
-  <body>
-    <header>
-      <nav class="container">
-        <span class="logo">Logo</span>
-        <ul class="desktop-links">
-          <li><a href="../index.html">Home</a></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <span class="logo">Logo</span>
+      <ul class="desktop-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="./pages/event.html">Events</a></li>
+        <li><a href="pages/blog.html">Blog</a></li>
+        <li><a href="./pages/faq-page.html">FAQ</a></li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="search..." />
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+      </div>
+      <span class="burgermenue">
+        <i id="menu-icon" class="fa-solid fa-burger fa-2x"></i>
+        <ul id="menu-list">
+          <li><a href="#">Home</a></li>
           <li><a href="./pages/event.html">Events</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
           <li><a href="./pages/faq-page.html">FAQ</a></li>
         </ul>
-        <div class="search">
-          <input type="text" placeholder="search..." />
-          <span><i class="fa-solid fa-magnifying-glass"></i></span>
-        </div>
-        <span class="burgermenue">
-          <i id="menu-icon" class="fa-solid fa-burger fa-2x"></i>
-          <ul id="menu-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="./pages/event.html">Events</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="./pages/faq-page.html">FAQ</a></li>
-          </ul>
-        </span>
-      </nav>
-    </header>
-    <section class="hero">
-      <div class="container">
-        <h1>Our Event Are The Best</h1>
+      </span>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h1>Our Event Are The Best</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
+        harum officiis vitae
+      </p>
+    </div>
+  </section>
+  <section class="mission-services container">
+    <h2>Mission and services</h2>
+    <div class="content">
+      <img src="./assets/mission.png" alt="" />
+      <div>
+        <h3>Live Music Performances</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
-          harum officiis vitae
+          Enjoy unforgettable live shows from top artists and local talents
+          across multiple stages, all weekend long.
+        </p>
+        <h3>Food & Drinks</h3>
+        <p>
+          Taste delicious street food, refreshing drinks, and gourmet treats
+          from our curated selection of local vendors.
+        </p>
+        <h3>Art & Activities</h3>
+        <p>
+          Explore creative workshops, art installations, and fun activities
+          designed to make your festival experience unique.
         </p>
       </div>
-    </section>
-    <section class="mission-services container">
-      <h2>Mission and services</h2>
-      <div class="content">
-        <img src="./assets/mission.png" alt="" />
-        <div>
-          <h3>Live Music Performances</h3>
-          <p>
-            Enjoy unforgettable live shows from top artists and local talents
-            across multiple stages, all weekend long.
-          </p>
-          <h3>Food & Drinks</h3>
-          <p>
-            Taste delicious street food, refreshing drinks, and gourmet treats
-            from our curated selection of local vendors.
-          </p>
-          <h3>Art & Activities</h3>
-          <p>
-            Explore creative workshops, art installations, and fun activities
-            designed to make your festival experience unique.
-          </p>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="event">
+    </div>
+  </section>
+      <section class="event">
       <h2>Events</h2>
 
        <div class="event_card">
@@ -155,7 +150,58 @@
         </div>
       </div>
     </section>
+  <footer>
+    <div class="part-1">
+      <img class="footer-logo" src="../img/dj 1@2x.png" alt="" />
+      <p>
+        Eventick is a global self-service ticketing platform for live
+        experiences that allows anyone to create, share, find and attend
+        events that fuel their passions and enrich their lives.
+      </p>
+      <p id="Copyright">Copyright &copy; All right reserved</p>
+    </div>
+    <div class="wrap-part-2">
+      <div class="part-2">
+        <h3>Plan Events</h3>
+        <ul>
+          <li><a href="#">Create and Set Up</a></li>
+          <li><a href="#">Sell Tickets</a></li>
+          <li><a href="#">Online RSVP </a></li>
+        </ul>
+      </div>
+    </section>
+      <div class="part-2">
+        <h3>Eventick</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="part-4">
+      <h3>Stay in the loop</h3>
+      <p>
+        Join our mailing list to stay in the loop with our newest for Event
+        and concert
+      </p>
+      <div class="input-container">
+        <input type="text" placeholder="Enter your email address.." />
+        <button type="button">Subscibe Now</button>
+      </div>
+      <div class="images-footer">
+        <img src="../img/Group.png" alt="" />
+        <img src="../img/discord (1) 1.png" alt="" />
+        <img src="../img/instagram 1.png" alt="" />
+        <img src="../img/github 1.png" alt="" />
+      </div>
+      <div class="Policy-service">
+        <p>Privacy Policy</p>
+        <p>Term of Service</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/main.js"></script>
+</body>
 
-    <script src="./assets/main.js"></script>
-  </body>
 </html>
