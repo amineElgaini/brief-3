@@ -21,8 +21,6 @@
 .event_card img {
   width: 100%;
   height: 200px;
-
-
 }
 
 .event_card--item1 p {
@@ -54,8 +52,15 @@
 .event_card-carousel .event_card--item1 img {
   width: 300px;
   height: 200px;
- 
 
+}
+
+.event__title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2em;
+  background-color: darkgray;
+  padding: 0.5em;
 }
 
 .event_card-carousel {
@@ -65,13 +70,15 @@
 }
 
 .carousel-event {
-   display: flex; 
-
+  display: flex; 
   gap: 2em;
-  animation: scroll 40s linear infinite;
+  animation: scroll 20s linear infinite;
   width: max-content;
 }
 
+.PASSE{
+    margin-top: 2em;
+}
 
 
 @keyframes scroll {
@@ -80,7 +87,7 @@
   }
 
   100% {
-    transform: translateX(-25%);
+    transform: translateX(-20%);
   }
 
 }
@@ -93,7 +100,6 @@
     gap: 2em;
     margin-left: 2em;
   }
- 
 }
 
 @media screen and (min-width: 1024px) {

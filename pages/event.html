@@ -9,9 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
+  <title>Event</title>
 </head>
-
 <body>
   <header>
     <nav class="container">
@@ -37,95 +36,106 @@
       </span>
     </nav>
   </header>
-  <section class="event_card-carousel">
-    <div class="carousel-event">
-      <div class="event_card--item1">
-        <img src="../assets/Evenement-2.jpg" alt="Evenement-1" class="img-carousel" />
-        <p>Wonder Girls 2010 Wonder</p>
-        <p>Megarama Casablanca</p>
-        <p>02-09-2025</p>
-      </div>
 
-      <div class="event_card--item1">
-        <img src="../assets/Evenement-5.jpg" alt="Evenement-2" class="img-carousel" />
-        <p>Jazz Night</p>
-        <p>Théâtre Mohammed V</p>
-        <p>12-10-2025</p>
-      </div>
-
-      <div class="event_card--item1">
-        <img src="../assets/Evenement-3.jpg" alt="Evenement-3" class="img-carousel" />
-        <p>Festival Gnawa</p>
-        <p>Essaouira</p>
-        <p>05-07-2025</p>
-      </div>
-
-      <div class="event_card--item1">
-        <img src="../assets/Evenement-4.jpg" alt="Evenement-1" class="img-carousel" />
-        <p>Wonder Girls 2010 Wonder</p>
-        <p>Megarma Casablanca</p>
-        <p>02-09-2025</p>
-      </div>
-    </div>
-  </section>
-  <section class="event-class">
-    <div class="event_time">
-      <p onclick="semaine()">Cette semaine</p>
-      <p onclick="weekend()">Cette weekend</p>
-      <p onclick="mois()">Ce mois-ci</p>
+    <div>
+        <h1 class="event__title">Events</h1>
     </div>
 
-    <div class="event_card">
-      <a href="./Details.html" class="event_card--lien" id="event-item1">
-        <div class="event_card--item1">
-          <img src="../assets/Evenement-1.jpg" alt="Evenement-1" />
-          <p>Wonder Girls 2010 Wonder</p>
-          <p>Megarma Casablanca</p>
-          <p>02-09-2025</p>
+    <section class="event_card-carousel">
+        <div class="carousel-event">
+            <a href="./Details.html">
+            <div class="event_card--item1">
+                <img src="../assets/Evenement-2.jpg" alt="Evenement-1" class="img-carousel">
+                <p>Wonder Girls 2010 Wonder</p>
+                <p>Megarama Casablanca</p>
+                <p>02-09-2025</p>
+            </div>
+            </a>
+
+            <a href="./Details.html">
+            <div class="event_card--item1">
+                <img src="../assets/Evenement-5.jpg" alt="Evenement-2" class="img-carousel">
+                <p>Jazz Night</p>
+                <p>Théâtre Mohammed V</p>
+                <p>12-10-2025</p>
+            </div>
+            </a>
+
+            <a href="./Details.html">
+            <div class="event_card--item1">
+                <img src="../assets/Evenement-3.jpg" alt="Evenement-3" class="img-carousel">
+                <p>Festival Gnawa</p>
+                <p>Essaouira</p>
+                <p>05-07-2025</p>
+            </div>
+            </a>
+
+            <a href="./Details.html">
+            <div class="event_card--item1">
+                <img src="../assets/Evenement-4.jpg" alt="Evenement-1" class="img-carousel">
+                <p>Wonder Girls 2010 Wonder</p>
+                <p>Megarma Casablanca</p>
+                <p>24-10-2025</p>
+            </div>
+            </a>
         </div>
-      </a>
-      <a href="./Details.html" class="event_card--lien" id="event-item2">
-        <div class="event_card--item1">
-          <img src="../assets/Evenement-1.jpg" alt="Evenement-1" />
-          <p>Wonder Girls 2010 Wonder</p>
-          <p>Megarma Casablanca</p>
-          <p>02-09-2025</p>
+    </section>
+
+    <section class="event-class">
+        <div class="event_time">
+            <p onclick="filterByYear()">Cette annee</p>
+            <p onclick="filterBYMounth()">Ce mois-ci</p>
+            <p onclick="filterByDay()">Ce jour</p>
         </div>
-      </a>
-      <a href="./Details.html" class="event_card--lien" id="event-item3">
-        <div class="event_card--item1">
-          <img src="../assets/Evenement-1.jpg" alt="Evenement-1" />
-          <p>Wonder Girls 2010 Wonder</p>
-          <p>Megarma Casablanca</p>
-          <p>02-09-2025</p>
+
+        <div id="event_container" class="event_card"></div>
+    </section>
+
+    <section class="PASSE">
+        <h1 class="event__title">Event passés</h1>
+        <div class="event_card">
+            <a href="./Eveent.html" class="event_card--lien" id="event-item5">
+                <div class="event_card--item1">
+                    <img src="../assets/Evenement-5.jpg" alt="Evenement-1">
+                    <p>Wonder Girls 2010 Wonder </p>
+                    <p>Megarma Casablanca</p>
+                    <p>09-09-2026</p>
+                </div>
+            </a>
+            <a href="./Eveent.html" class="event_card--lien" id="event-item6">
+                <div class="event_card--item1">
+                    <img src="../assets/Evenement-4.jpg" alt="Evenement-1">
+                    <p>Wonder Girls 2010 Wonder </p>
+                    <p>Megarma Casablanca</p>
+                    <p>12-11-2025</p>
+                </div>
+            </a>
         </div>
-      </a>
-      <a href="./Details.html" class="event_card--lien" id="event-item4">
-        <div class="event_card--item1">
-          <img src="../assets/Evenement-2.jpg" alt="Evenement-1" />
-          <p>Wonder Girls 2010 Wonder</p>
-          <p>Megarma Casablanca</p>
-          <p>02-09-2025</p>
+    </section>
+
+    <section class="PASSE">
+        <h1 class="event__title" >Event passés</h1>
+        <div class="event_card">
+            <a href="./Details.html" class="event_card--lien" id="event-item5">
+                <div class="event_card--item1">
+                    <img src="../assets/Evenement-3.jpg" alt="Evenement-1">
+                    <p>Wonder Girls 2010 Wonder </p>
+                    <p>Megarma Casablanca</p>
+                    <p>09-09-2009</p>
+                </div>
+            </a>
+            <a href="./Details.html" class="event_card--lien" id="event-item6">
+                <div class="event_card--item1">
+                    <img src="../assets/Evenement-1.jpg" alt="Evenement-1">
+                    <p>Wonder Girls 2010 Wonder </p>
+                    <p>Megarma Casablanca</p>
+                    <p>12-07-2005</p>
+                </div>
+            </a>
         </div>
-      </a>
-      <a href="./Details.html" class="event_card--lien" id="event-item5">
-        <div class="event_card--item1">
-          <img src="../assets/Evenement-3.jpg" alt="Evenement-1" />
-          <p>Wonder Girls 2010 Wonder</p>
-          <p>Megarma Casablanca</p>
-          <p>02-09-2025</p>
-        </div>
-      </a>
-      <a href="./Details.html" class="event_card--lien" id="event-item6">
-        <div class="event_card--item1">
-          <img src="../assets/Evenement-3.jpg" alt="Evenement-1" />
-          <p>Wonder Girls 2010 Wonder</p>
-          <p>Megarma Casablanca</p>
-          <p>02-09-2025</p>
-        </div>
-      </a>
-    </div>
-  </section>
+    </section>
+
+
   <footer>
     <div class="part-1">
       <img class="footer-logo" src="../img/dj 1@2x.png" alt="" />
@@ -176,8 +186,132 @@
       </div>
     </div>
   </footer>
-  <script src="./../assets/main.js"></script>
 
+<script src="./../assets/main.js"></script>
+
+    <script>
+
+        const events = [
+            { year: "2025", moins: "10", jour: "23", titre: "Concert Pop", lieu: "Megarama Casablanca", img: "../assets/Evenement-1.jpg" },
+            { year: "2025", moins: "07", jour: "1", titre: "Jazz Night", lieu: "Théâtre Mohammed V", img: "../assets/Evenement-2.jpg" },
+            { year: "2025", moins: "09", jour: "25", titre: "Festival Gnawa", lieu: "Essaouira", img: "../assets/Evenement-3.jpg" },
+            { year: "2025", moins: "10", jour: "24", titre: "Salon du Livre", lieu: "Rabat Expo", img: "../assets/Evenement-4.jpg" },
+            { year: "2025", moins: "10", jour: "27", titre: "Old Event", lieu: "Ancien Théâtre", img: "../assets/Evenement-5.jpg" },
+            { year: "2025", moins: "10", jour: "28", titre: "Old Event", lieu: "Ancien Théâtre", img: "../assets/Evenement-1.jpg" },
+            { year: "2025", moins: "10", jour: "29", titre: "Old Event", lieu: "Ancien Théâtre", img: "../assets/Evenement-2.jpg" },
+            { year: "2025", moins: "10", jour: "30", titre: "Old Event", lieu: "Ancien Théâtre", img: "../assets/Evenement-3.jpg" },
+            { year: "2025", moins: "10", jour: "31", titre: "Old Event", lieu: "Ancien Théâtre", img: "../assets/Evenement-4.jpg" },
+            { year: "2025", moins: "10", jour: "26", titre: "Old Event", lieu: "Ancien Théâtre", img: "../assets/Evenement-5.jpg" },
+        ];
+
+        let event_container = document.getElementById("event_container");
+        console.log(event_container);
+
+
+        const date = new Date();
+
+        const annees = date.getFullYear();
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+
+        let show_all_data = () => {
+
+            event_container.innerHTML = ""
+            for (const event of events) {
+
+                let content = `
+        
+         <a href="./Eveent.html" class="event_card--lien" id="event-item1">
+                <div class="event_card--item1">
+                    <img src="${event.img}" alt="Evenement-1">
+                    <p>${event.titre}</p>
+                    <p>${event.lieu}</p>
+                    <p class="date">${event.jour}-${event.moins}-${event.year}</p>
+                </div>
+            </a>
+        
+        
+        `
+                event_container.innerHTML += content;
+            }
+        }
+        show_all_data();
+        let filterBYMounth = () => {
+            event_container.innerHTML = ""
+            events.filter(event => {
+
+                if (event.moins == month && event.year == annees) {
+                    let content = `
+        
+         <a href="./Eveent.html" class="event_card--lien" id="event-item1">
+                <div class="event_card--item1">
+                    <img src="${event.img}" alt="Evenement-1">
+                    <p>${event.titre}</p>
+                    <p>${event.lieu}</p>
+                    <p class="date">${event.jour} ${event.moins}  ${event.year}</p>
+                </div>
+            </a>
+        
+        
+        `
+                    event_container.innerHTML += content
+                }
+
+            })
+
+        }
+
+        let filterByYear = () => {
+            event_container.innerHTML = ""
+            events.filter(event => {
+
+                if (event.year == annees) {
+                    let content = `
+        
+         <a href="./Eveent.html" class="event_card--lien" id="event-item1">
+                <div class="event_card--item1">
+                    <img src="${event.img}" alt="Evenement-1">
+                    <p>${event.titre}</p>
+                    <p>${event.lieu}</p>
+                    <p class="date">${event.jour} ${event.moins}  ${event.year}</p>
+                </div>
+            </a>
+        
+        
+        `
+                    event_container.innerHTML += content
+                }
+
+            })
+
+        }
+
+        let filterByDay = () => {
+            event_container.innerHTML = ""
+            events.filter(event => {
+
+                if (event.year == annees && event.moins == month && event.jour == day) {
+                    let content = `
+        
+         <a href="./Eveent.html" class="event_card--lien" id="event-item1">
+                <div class="event_card--item1">
+                    <img src="${event.img}" alt="Evenement-1">
+                    <p>${event.titre}</p>
+                    <p>${event.lieu}</p>
+                    <p class="date">${event.jour} ${event.moins}  ${event.year}</p>
+                </div>
+            </a>
+        
+        
+        `
+                    event_container.innerHTML += content
+                }
+
+            })
+
+        }
+
+    </script>
 </body>
 
 </html>
